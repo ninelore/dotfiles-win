@@ -1,0 +1,3 @@
+[submodule "linux-dotfiles"]
+	path = linux-dotfiles
+	url = https://github.com/ninelore/dotfiles
