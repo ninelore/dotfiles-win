@@ -46,7 +46,7 @@
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.20000000000000001,
+            "acrylicOpacity": 0.3,
             "colorScheme": "ninelore",
             "padding": "10",
             "tabColor": "#00D1A6",
