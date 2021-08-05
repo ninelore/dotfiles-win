@@ -1,13 +1,7 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    // Add custom actions and keybindings to this array.
-    // To unbind a key combination from your defaults.json, set the command to "unbound".
-    // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
     "actions": 
     [
-        // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
-        // These two lines additionally bind them to Ctrl+C and Ctrl+V.
-        // To learn more about selection, visit https://aka.ms/terminal-selection
         {
             "command": 
             {
@@ -17,18 +11,13 @@
             "keys": "ctrl+c"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        // Press Ctrl+Shift+F to open the search box
-        {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
-        // Press Alt+Shift+D to open a new pane.
-        // - "split": "auto" makes this pane open in the direction that provides the most surface area.
-        // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
-        // To learn more about panes, visit https://aka.ms/terminal-panes
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
         {
             "command": 
             {
@@ -46,7 +35,7 @@
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.3,
+            "acrylicOpacity": 0.15,
             "colorScheme": "ninelore",
             "padding": "10",
             "tabColor": "#00D1A6",
@@ -62,16 +51,10 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+                "commandline": "cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Arch",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
-                "source": "Windows.Terminal.Wsl"
+                "name": "Command Prompt"
             },
             {
                 "commandline": "powershell.exe",
@@ -80,16 +63,16 @@
                 "name": "Windows PowerShell"
             },
             {
-                "commandline": "cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Command Prompt"
-            },
-            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
             }
         ]
     },
