@@ -50,6 +50,7 @@ source $ZSH/oh-my-zsh.sh
 # Custom Enviromental Vars
 export WINUSER="/mnt/c/Users/ingor"
 export GCM_CREDENTIAL_STORE="gpg"
+export GPG_TTY=$(tty)
 
 # Custon Aliases
 bindkey -v
