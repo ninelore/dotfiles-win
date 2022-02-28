@@ -1,5 +1,0 @@
-golang
-nodejs
-nvim
-ranger
-zsh
