@@ -30,21 +30,28 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "defaultProfile": "{7476bb00-a987-4e59-8300-63ba99a866d2}",
+    "launchMode": "maximized",
     "profiles": 
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.15,
+            "acrylicOpacity": 0.14999999999999999,
             "colorScheme": "ninelore",
             "padding": "10",
             "tabColor": "#00D1A6",
-            "useAcrylic": true
+            "useAcrylic": false
         },
         "list": 
         [
             {
-                "cursorShape": "emptyBox",
+                "commandline": "wsl.exe -d Ubuntu",
+                "guid": "{7476bb00-a987-4e59-8300-63ba99a866d2}",
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "WSL",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
@@ -59,7 +66,7 @@
             {
                 "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
+                "hidden": true,
                 "name": "Windows PowerShell"
             },
             {
@@ -70,9 +77,16 @@
             },
             {
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": false,
+                "hidden": true,
                 "name": "Git Bash",
                 "source": "Git"
+            },
+            {
+                "commandline": "wsl.exe -d Arch -u ninelore",
+                "guid": "{640558d6-cd8d-4f0c-8b79-d2ac0cab7d50}",
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "Arch",
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
@@ -310,5 +324,6 @@
         }
     ],
     "theme": "dark",
+    "useAcrylicInTabRow": true,
     "windowingBehavior": "useAnyExisting"
 }
