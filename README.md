@@ -12,18 +12,3 @@
 - run `wsl-dots/install-vimplug-ohmyzsh.sh`
 - (WIP)
 
-### Android SDK tools setup
-
-```bash
-sudo apt install openjdk-8-jdk-headless zip unzip
-wget https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
-mkdir android-sdk
-unzip commandlinetools-linux-6200805_latest.zip -d $HOME/android-sdk
-# restart terminal/shell
-sdkmanager --sdk_root=${ANDROID_HOME} "tools"
-sdkmanager --update
-sdkmanager "build-tools;28.0.3" "platform-tools" "platforms;android-28" "tools"
-sdkmanager --licenses
-sudo apt install gradle
-```
-
