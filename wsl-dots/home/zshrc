@@ -48,7 +48,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Custom Enviromental Vars
-export EDITOR="/usr/bin/nvim"
+export EDITOR="code"
 export WINUSER="/mnt/c/Users/ingor"
 export GCM_CREDENTIAL_STORE="gpg"
 export GPG_TTY=$(tty)
