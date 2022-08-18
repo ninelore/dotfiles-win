@@ -50,8 +50,8 @@ source $ZSH/oh-my-zsh.sh
 # Custom Enviromental Vars
 export EDITOR="code"
 export WINUSER="/mnt/c/Users/ingor"
-export GCM_CREDENTIAL_STORE="gpg"
-export GPG_TTY=$(tty)
+#export GCM_CREDENTIAL_STORE="gpg"
+#export GPG_TTY=$(tty)
 export ANDROID_HOME="$HOME/android-sdk"
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
