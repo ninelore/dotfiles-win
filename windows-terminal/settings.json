@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -11,12 +12,12 @@
             "keys": "ctrl+c"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": "paste",
             "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -30,26 +31,26 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{7476bb00-a987-4e59-8300-63ba99a866d2}",
-    "launchMode": "maximized",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "profiles": 
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.14999999999999999,
-            "colorScheme": "ninelore",
-            "padding": "10",
-            "tabColor": "#00D1A6",
-            "useAcrylic": false
+            "colorScheme": "One Half Dark",
+            "font": 
+            {
+                "face": "JetBrainsMono NFM"
+            },
+            "opacity": 100,
+            "useAcrylic": true
         },
         "list": 
         [
             {
-                "commandline": "wsl.exe -d Ubuntu",
-                "guid": "{7476bb00-a987-4e59-8300-63ba99a866d2}",
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "WSL",
-                "startingDirectory": "%USERPROFILE%"
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
             },
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -58,16 +59,25 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "commandline": "cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
+                "elevate": true,
+                "guid": "{c66334a8-58cf-4dfa-8874-cfd753fce350}",
                 "hidden": false,
-                "name": "Command Prompt"
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
+                "name": "PowerShell Admin",
+                "startingDirectory": "%USERPROFILE%"
             },
             {
-                "commandline": "powershell.exe",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": true,
                 "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -76,17 +86,16 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": true,
-                "name": "Git Bash",
-                "source": "Git"
+                "guid": "{edf4b0f0-71ab-5f08-9c03-7e89c1cc57aa}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "commandline": "wsl.exe -d Arch -u ninelore",
-                "guid": "{640558d6-cd8d-4f0c-8b79-d2ac0cab7d50}",
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "Arch",
-                "startingDirectory": "%USERPROFILE%"
+                "guid": "{e93aba53-21e7-5e50-9d43-4fab3d9c14f6}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -139,7 +148,7 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#282C34",
+            "background": "#101114",
             "black": "#282C34",
             "blue": "#61AFEF",
             "brightBlack": "#5A6374",
@@ -298,32 +307,8 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
-        },
-        {
-            "background": "#161925",
-            "black": "#161925",
-            "blue": "#00C1E4",
-            "brightBlack": "#282C34",
-            "brightBlue": "#00C1E4",
-            "brightCyan": "#00D1A6",
-            "brightGreen": "#71D79F",
-            "brightPurple": "#C74DED",
-            "brightRed": "#ED254E",
-            "brightWhite": "#DCDFE4",
-            "brightYellow": "#F9DC5C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#00D1A6",
-            "foreground": "#DCDFE4",
-            "green": "#71F79F",
-            "name": "ninelore",
-            "purple": "#C74DED",
-            "red": "#ED254E",
-            "selectionBackground": "#FFFFFF",
-            "white": "#C3C7D1",
-            "yellow": "#F9DC5C"
         }
     ],
-    "theme": "dark",
-    "useAcrylicInTabRow": true,
-    "windowingBehavior": "useAnyExisting"
+    "themes": [],
+    "useAcrylicInTabRow": true
 }
